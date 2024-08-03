@@ -1,7 +1,14 @@
+@import "../../App.scss";
+
 .heading {
   // padding-top: 30px;
   // padding-left: 30px;
   padding-bottom: 40px;
   font-size: 32px;
   color: white;
+
+  @include mobile {
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
 }

@@ -105,6 +105,10 @@
 
         h1 {
           color: lightgray;
+
+          @include mobile {
+            font-size: 18px;
+          }
         }
 
         .rightContainer {

@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .sidebar {
   width: 80px;
   // height: calc(100vh - 80px);
@@ -9,6 +11,10 @@
   justify-content: space-between;
   //   align-items: center;
   //   justify-content: center;
+
+  @include mobile {
+    width: 60px;
+  }
 
   .top {
     display: flex;
@@ -29,6 +35,12 @@
     .icon {
       width: 32px;
       height: 32px;
+      cursor: pointer;
+      transition: 0.2s ease-in;
+
+      &:hover {
+        scale: 1.2;
+      }
     }
   }
 
@@ -41,6 +53,12 @@
     .icon {
       width: 32px;
       height: 32px;
+      cursor: pointer;
+      transition: 0.2s ease-in;
+
+      &:hover {
+        scale: 1.2;
+      }
     }
   }
 }
