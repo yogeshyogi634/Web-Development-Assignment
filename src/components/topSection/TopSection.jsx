@@ -60,8 +60,11 @@ const TopSection = () => {
             <div className="rightSide">
               <div className="circle">
                 <div className="innerCircle">
-                  100%
-                  <span>Goal Completed</span>
+                  <span>100%</span>
+                  <span>
+                    Goal <br />
+                    Completed
+                  </span>
                 </div>
               </div>
               <div className="text">*The value here has been rounded off.</div>

@@ -1,5 +1,129 @@
 .bottomsection {
   width: 100%;
-  background-color: #2b2f3f;
-  height: 200px;
+  // background-color: #2b2f3f;
+  // height: 560px;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    .left {
+      height: 460px;
+      flex: 3;
+      background-color: #2b2f3f;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h1 {
+        color: lightgray;
+        // margin-bottom: 30px;
+      }
+
+      .detailsContainer {
+        display: flex;
+        flex-direction: column;
+        color: lightgray;
+
+        .details {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 50px;
+          // padding-right: 50px;
+
+          .detailsNameImg {
+            display: flex;
+            align-items: center;
+            // justify-content: flex-start;
+            gap: 10px;
+
+            .detailsImg {
+              width: 36px;
+              height: 36px;
+              background-color: white;
+              border-radius: 50%;
+
+              img {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            p {
+              font-weight: 500;
+            }
+          }
+        }
+        hr {
+          margin-top: 10px;
+          border-bottom: 0.2px solid rgba(173, 172, 172, 0);
+        }
+      }
+    }
+    .right {
+      height: 460px;
+      flex: 2;
+      background-color: #2b2f3f;
+      border-radius: 10px;
+      padding: 20px;
+      overflow-y: scroll;
+
+      .rightWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h1 {
+          color: lightgray;
+        }
+
+        .rightContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+
+          .rightImgtext {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .imgText {
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+
+              img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+            }
+            p {
+              color: lightgray;
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+
+          .ratings {
+            color: yellow;
+          }
+
+          .desc {
+            color: rgb(195, 189, 189);
+            font-weight: 300;
+          }
+        }
+        hr {
+          margin-top: 10px;
+          border-bottom: 0.1px solid rgba(173, 172, 172, 0);
+        }
+      }
+    }
+  }
 }
