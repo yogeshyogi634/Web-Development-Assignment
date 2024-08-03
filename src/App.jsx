@@ -10,7 +10,8 @@ function App() {
       <Navbar />
       <section>
         <Sidebar />
-        <div style={{ width: "100%", padding: "30px" }}>
+        {/* <div style={{ width: "100%", padding: "30px" }}> */}
+        <div className="mainSections">
           <Heading />
           <MainSections />
         </div>
