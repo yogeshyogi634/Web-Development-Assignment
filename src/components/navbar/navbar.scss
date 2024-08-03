@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .navbar {
   width: 100%;
   height: 80px;
@@ -18,6 +20,10 @@
   .search {
     display: flex;
     align-items: center;
+
+    @include tablet {
+      display: none;
+    }
 
     input {
       width: 300px;

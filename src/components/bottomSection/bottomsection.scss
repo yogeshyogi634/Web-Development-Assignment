@@ -1,13 +1,23 @@
+@import "../../App.scss";
+
 .bottomsection {
   width: 100%;
   // background-color: #2b2f3f;
-  // height: 560px;
 
   .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+    @include mobile {
+      height: 400px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
     .left {
       height: 460px;
@@ -18,6 +28,13 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      @include tablet {
+        width: 100%;
+      }
+      @include mobile {
+        display: none;
+      }
 
       h1 {
         color: lightgray;
@@ -74,10 +91,18 @@
       padding: 20px;
       overflow-y: scroll;
 
+      @include tablet {
+        width: 100%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+
       .rightWrapper {
         display: flex;
         flex-direction: column;
         gap: 20px;
+
         h1 {
           color: lightgray;
         }

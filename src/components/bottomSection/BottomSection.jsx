@@ -45,7 +45,7 @@ const BottomSection = () => {
           <div className="rightWrapper">
             <h1>Customer's Feedback</h1>
             {customers.map((customer) => (
-              <div className="rightContainer">
+              <div className="rightContainer" key={customer.id}>
                 <div className="rightImgtext">
                   <div className="imgText">
                     <img src={customer.img} alt="" />
